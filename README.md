@@ -23,6 +23,10 @@
 
 - 1.0.0（2026-10-01）：首版。内化 duboc/agy-skills design-critique（Apache-2.0）五阶段流程 + black141312/ada ui-review（MIT）眯眼测试与一致性审计；升级点：输入保真度三档与证据边界诚实门、中文排版专项、中文语境"AI 味"反模式清单（独立撰写）、百分制评分、双模式交付、自迭代质检协议。
 
+## 许可证
+
+MIT（完整文本见 GitHub 仓库根目录 `LICENSE` 文件）。
+
 ## 出品：刘洪光
 
 本 skill 由真人出镜 IP「刘洪光」（安徽合肥）出品，归属 [lhg-skills](https://github.com/lhg-skills)。
