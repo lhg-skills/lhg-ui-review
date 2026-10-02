@@ -3,10 +3,22 @@ name: lhg-ui-review
 slug: lhg-ui-review
 displayName: 网页 UI 专家走查
 description: 网页 UI 专家走查：截图/代码/链接三种输入，五支柱（可用性/视觉层级/一致性/无障碍/文案）系统找缺点，P0-P2 分级 + 百分制评分，每条意见按"观察→影响→修复"输出可执行指导。当用户说"看看这个页面/评审一下这个 UI/这个设计有什么问题/帮我走查一下"时使用。
-version: 1.0.1
+version: 1.1.0
 ---
 
 # 网页 UI 专家走查（UI Review）
+
+## 自更新检查（每次调用时先执行）
+
+1. 读取本文件 frontmatter 中的 `version`，记为本地版本。
+2. 获取远端最新版本：
+   `curl -s https://raw.githubusercontent.com/lhg-skills/lhg-ui-review/main/SKILL.md | grep '^version:'`
+   - 如果 curl 不可用，跳过检查，直接使用本 skill。
+   - 为避免每次调用都请求网络，每天只检查一次：如果 `~/.cache/lhg-skills/lhg-ui-review.lastcheck`
+     存在且内容是今天的日期（YYYY-MM-DD），可跳过本次检查；否则检查后把今天日期写入该文件。
+3. 如果远端版本与本地版本**不同**：**先告诉用户**，例如"发现新版本（本地 1.0.0 → 远端 1.1.0），建议更新"，
+   并询问"要我现在帮你更新吗？"——**用户确认之前不要擅自执行更新**（更新会覆盖本地文件，本地定制内容会丢失）。
+4. 用户确认后执行：`npx skills update lhg-ui-review -y`（当初如用 `-g` 全局安装，可再加 `-g`）。
 
 **方法来源声明**：
 
