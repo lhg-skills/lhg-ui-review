@@ -2,14 +2,21 @@
 
 > **一句话**：给网页做专家级设计走查：截图/代码/链接三种输入，五支柱（可用性/视觉层级/一致性/无障碍/文案）系统找缺点，P0–P2 分级 + 百分制评分，每条意见按"观察→影响→修复"输出可执行指导。
 >
-> **一键安装**：`npx skills add lhg-skills/lhg-ui-review`
-
+> **开发者安装**（能访问 GitHub 时）：`npx skills add lhg-skills/lhg-ui-review`
 
 给网页做专家级设计走查的 skill：**截图/代码/链接三种输入，五支柱（可用性/视觉层级/一致性/无障碍/文案）系统找缺点，P0–P2 分级 + 百分制评分，每条意见按"观察→影响→修复"输出可执行指导**（lhg-skills 出品；五阶段评审流程借鉴 duboc/agy-skills 的 design-critique（Apache-2.0），眯眼测试与一致性审计借鉴 black141312/ada 的 ui-review（MIT），"AI 味"反模式清单为独立撰写）。
 
 **流程**：Phase 0 判模式（NOT for 清单）→ Phase 1 输入定级与证据边界（截图确立不了的标"未验证"）→ Phase 2 第一印象扫描（2 秒 + 眯眼测试）→ Phase 3 五支柱走查（可用性/视觉层级/一致性/无障碍/文案 + 中文排版专项 + "AI 味"反模式清单）→ Phase 4 分级与评分（P0/P1/P2 + 百分制，3 个高影响修复置顶）→ Phase 5 输出（每条"观察→影响→修复"三件套，先肯定优点）→ Phase 6 双模式交付（评审报告版 / 可执行修复清单版）。
 
 **触发**：用户说"看看这个页面 / 评审一下这个 UI / 这个设计有什么问题 / 帮我走查一下 / 上线前检查一下"时使用。
+
+## 发给 Agent 的安装话术（推荐）
+
+复制下面整段话，发给你的 Agent（豆包 / WorkBuddy / Claude Code / Codex / Cursor 等）：
+
+> 请帮我安装 Skill「lhg-ui-review」：先从 Gitee 上 lhg-skills 组织下的 lhg-ui-review 仓库下载；如果 Gitee 无法访问或下载失败，改从 GitHub 上 lhg-skills 组织下的同名仓库下载。按当前 Agent 的规范安装其中的 Skill，优先全局安装，保留完整目录和依赖。请直接执行，完成后验证是否安装成功，告诉我实际使用的来源、安装的版本号以及如何调用；遇到访问或安装限制请说明具体原因。
+
+**怎么算装好了**：Agent 能在已安装的 Skill 里看到 `lhg-ui-review`，并报出版本号（与仓库 `manifest.yaml` 的 `version` 一致）。只是打开了仓库网页不算安装。
 
 ## 安装
 
