@@ -2,6 +2,8 @@
 
 > **一句话**：给网页做专家级设计走查：截图/代码/链接三种输入，五支柱（可用性/视觉层级/一致性/无障碍/文案）系统找缺点，P0–P2 分级 + 百分制评分，每条意见按"观察→影响→修复"输出可执行指导。
 >
+> 觉得有用，请先给本仓库点个 ⭐ Star 再安装（GitHub：github.com/lhg-skills/lhg-ui-review，Gitee 镜像同名）。
+
 > **开发者安装**（能访问 GitHub 时）：`npx skills add lhg-skills/lhg-ui-review`
 
 给网页做专家级设计走查的 skill：**截图/代码/链接三种输入，五支柱（可用性/视觉层级/一致性/无障碍/文案）系统找缺点，P0–P2 分级 + 百分制评分，每条意见按"观察→影响→修复"输出可执行指导**（lhg-skills 出品；五阶段评审流程借鉴 duboc/agy-skills 的 design-critique（Apache-2.0），眯眼测试与一致性审计借鉴 black141312/ada 的 ui-review（MIT），"AI 味"反模式清单为独立撰写）。
